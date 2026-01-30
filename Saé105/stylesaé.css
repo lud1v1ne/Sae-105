@@ -1,0 +1,288 @@
+body {
+  background-color: rgb(16, 76, 136);
+}
+
+h1 {
+  color: rgb(246, 255, 0);
+  font-size: 3rem;
+}
+
+.sous-titre{
+  color: white;
+  font-size: 1.5rem
+}
+
+.fixed-parallax .image {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+
+
+/*images UK avec les classes .one .two .three .four */
+.fixed-parallax .image.one {
+  background-image:url(img/KingsCollegeChapelWest.jpg) ;
+}
+
+.fixed-parallax .image.two {
+  background-image:url(img/Big_Ben_at_sunset_-_2014-10-27_17-30.jpg);
+  
+}
+
+.fixed-parallax .image.three {
+  background-image:url(img/Royal_Crescent_Bath_Beata_Cosgrove_Photography.jpg) ;
+}
+.fixed-parallax .image.four {
+  background-image:url(img/Stonehenge.jpg) ;
+}
+.fixed-parallax .image.five {
+  background-image:url(img/SevenSistersCliff.jpg) ;
+}
+
+/*titres */
+.titre1 {
+  color: rgb(246, 255, 0);
+  font-family: Georgia, Times, 'Times New Roman', sans-serif;
+  font-size: 250%;
+  text-align: center;
+  background-attachment: scroll;
+  padding: 15%;
+}
+
+.titre2 {
+  color:rgb(246, 255, 0) ;
+  font-family: Georgia, Times, 'Times New Roman', sans-serif;
+  font-size: 250%;
+  text-align: center;
+  background-attachment: scroll;
+  padding: 15%;
+}
+
+.titre3 {
+  color:rgb(246, 255, 0) ;
+  font-family: Georgia, Times, 'Times New Roman', sans-serif;
+  font-size: 250%;
+  text-align: center;
+  background-attachment: scroll;
+
+  padding: 15%;
+}
+.titre4 {
+  color:rgb(246, 255, 0) ;
+  font-family: Georgia, Times, 'Times New Roman', sans-serif;
+  font-size: 250%;
+  text-align: center;
+  background-attachment: scroll;
+
+  padding: 15%;
+}
+.titre5 {
+  color:rgb(246, 255, 0) ;
+  font-family: Georgia, Times, 'Times New Roman', sans-serif;
+  font-size: 250%;
+  text-align: center;
+  background-attachment: scroll;
+
+  padding: 15%;
+}
+
+.cambridge {
+  text-align: center;
+  padding: 50px 30px;
+  height: 15vh;
+  font-size: 1.25rem;
+  color: white;
+  
+}
+
+.londres {
+  text-align: center;
+  padding: 50px 30px;
+  height: 15vh;
+  font-size: 1.25rem;
+  color: white;
+  
+}
+
+.bath {
+  text-align: center;
+  padding: 50px 30px;
+  height: 15vh;
+  font-size: 1.25rem;
+  color: white;
+ 
+}
+.Stonehenge {
+  text-align: center;
+  padding: 50px 30px;
+  height: 15vh;
+  font-size: 1.25rem;
+  color: white;
+ 
+}
+.SevenSisterCliff {
+  text-align: center;
+  padding: 50px 30px;
+  height: 15vh;
+  font-size: 1.25rem;
+  color: white;
+ 
+}
+ .descImg{
+  color: rgb(255, 246, 196);
+ }
+.textWhyThisPic{
+  color: white;
+ }
+
+ .srcImage{
+  color: white;
+  font-size: 0.50rem;
+ }
+
+
+/* Formulaire */
+.form-ajout {
+  margin: 5rem auto;
+  max-width: 600px;
+  color: bisque;
+  padding: 2rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+
+}
+.form-ajout label { display: block; margin-top: 1rem; font-weight: bold; }
+.form-ajout input[type="text"] { 
+  width: 100%; 
+  padding: 0.8rem; 
+  margin-top: 0.3rem;
+  border: 2px solid bisque;
+  background: rgba(255,255,255,0.9);
+  border-radius: 5px ;
+}
+.star-required {
+    color: red;
+    font-weight: bold;
+  
+}
+.form-ajout input:invalid {
+    border: 2px solid red;
+}
+
+.form-ajout input:valid {
+    border: 2px solid rgb(101, 255, 101);
+}
+
+
+#envoyer {
+  background: rgb(246, 255, 0);
+  color: navy;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/*PREVIEW*/
+.preview-zone {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    border: 2px dashed bisque;
+}
+
+.preview-titre {
+    color: rgb(246, 255, 0);
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.preview-description {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.preview-zone img {
+    max-width: 100%;
+    max-height: 280px;           
+    width: auto;
+    height: auto;
+    object-fit: contain;         
+    display: block;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+
+/* Popup */
+.popup {
+  position: fixed;
+  inset: 0; /*inset c'est pour englober les 4 coter*/
+  background: rgba(0,0,0,0.6); /* pour assombrir le fond quand on click*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.popup-invisible { display: none; }
+.popup-visible { display: flex; }
+.popup-contenu {
+  position: relative; /*cache-fenetre sera positionné par rapport à elle*/
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 90vh; /* il manquait ça pour contenir l'img qu'elle sorte pas de l'écran*/
+}
+.popup-image {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 5px; /*arrondis coin*/
+}
+.cache-fenetre { /*le bouton X*/
+  position: absolute; /* par rapport à son parent pop-contenu*/
+  top: 0.5rem;
+  right: 0.5rem;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer; /*lors du passage de la souris = pointeur*/
+  font-weight: bold;
+}
+.image-cliquable {
+  cursor: pointer;
+}
+
+.top{
+    position: fixed;        
+    bottom: 30px;          
+    right: 30px; 
+    background: #12026a;
+    color: white;
+    padding: 5px 6px;
+    border-radius: 50px;
+    text-decoration: none;
+  
+}
+
+/*couleur lien mail*/
+a[href^="mailto:"] {
+    color: rgb(225, 225, 225);
+    text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+    color: rgb(225, 225, 225) ;
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesaé.css">
+    <title>Saé 1.05</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.PNG">
+</head>
+
+<body>
+    <main>
+        <h1 id="top">Travelling around UK with <span class="name">Ludivine</span></h1> 
+<p class="sous-titre">Bienvenue sur mon site! C'est un site qui se présente d'avantage comme un blog et comme je l'espère un guide qui pourrait vous servir si vous souhaitez visiter l'angleterre!</p>
+ <!-- IMG -->
+        <div class="liste-imgs"></div>
+
+        <!-- FORMULAIRE -->
+        <form class="form-ajout">
+            <label for="titre">Une recommandation de lieu à ne surtout pas manquer? note le ici!<span class="star-required">*</span></label>
+            <input type="text" id="titre" name="titre" required>
+            <label for="description"> Avec ça une petite description de pourquoi ce lieu?<span class="star-required">*</span> </label>
+            <input type="text" id="description" name="description" required>
+            <label for="url">URL image<span class="star-required">*</span></label>
+            <input type="url" id="url" name="url" required 
+            placeholder="https://exemple.com/image.jpg">
+        
+<!--preview du resultat-->
+         <div class="preview-zone">
+        <h2 class="preview-titre"></h2>
+        <img class="preview-image" src="" alt="Preview" >
+        <p class="preview-description"></p>
+    </div>
+    
+    <input type="submit" id="envoyer" value="Envoyer">
+</form>
+
+
+        <!-- POPUP -->
+        <div class="popup popup-invisible">
+            <div class="popup-contenu">
+                <button class="cache-fenetre">✕</button>
+                <img src="" alt="" class="popup-image">
+            </div>
+        </div>
+        <a href="#top" class="top" title="Retourner en haut">
+        ⬆ Haut de page
+    </a><br>
+
+     <footer>
+    <details>
+        <summary><strong>MENTIONS LÉGALES</strong></summary>
+        <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site <strong>Travelling around UK with Ludivine</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
+        
+        <p><strong>Édition du site</strong><br>
+        (SAE 1.05 - IUT Université Gustave Eiffel) est édité par :<br>
+        <strong>Ludivine LENOIR-DAVID</strong>, étudiante à l'université de Gustave Eiffel.</p>
+        
+        <p><strong>Hébergement</strong><br>
+        Le Site est hébergé par la société O2Switch</p>
+        
+        <p><strong>Directeur de publication</strong><br>
+        Le Directeur de la publication du Site est <strong>Ludivine LENOIR-DAVID</strong>.</p>
+        
+        <p><strong>Nous contacter</strong><br>
+        Par email : <a href="mailto:ludivine.lenoir-david@edsu.univ-eiffel.fr">lenoirdavid@edu.univ-eiffel.fr</a><br>
+        </p>
+        
+        <p><strong>Images</strong> : © Wikimedia Commons, Stonehenge-tour</p>
+
+        <p>Les images sont protéger par des licences :  <a
+                    href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Voir licences des images</a></p>
+            <p>Les textes sont protéger par des licences :<a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Voir licences des textes</a></p>
+        
+        <p><strong>Responsable du traitement des données</strong> : <a href="mailto:philippe.gambette@univ-eiffel.fr">philippe.gambette@univ-eiffel.fr</a></p>
+    </details>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</footer>
+
+
+    </main>
+</body>
+
+</html>
